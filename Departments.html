@@ -12,57 +12,63 @@
         <script src="js/global-action-controller.js" rel="script" ></script>
     </head>
     <body>
-        <div id="header">
-            <div id="navbar-brand">
-                Amrutha
-            </div>
-            <div id="navbar-items" >
-                <div class="nav-item no-sub-menu nav-active" nav-item="home">
-                    HOME
-                </div>
-                <div class="nav-item" nav-item="facilities">
-                    FACILITIES
-                    <div class="drop-down">
-                        <a class="drop-down-item" href="Facilities.html">Hostel</a>
-                        <a class="drop-down-item" href="Facilities.html">Cafeteria</a>
-                        <a class="drop-down-item" href="Facilities.html">Transformation</a>
-                        <a class="drop-down-item" href="Facilities.html">Labs</a>
-                        <a class="drop-down-item" href="Facilities.html">Library</a>
-                        <a class="drop-down-item" href="Facilities.html">Multipurpose Hall</a>
-                    </div>
-                </div>
-                <div class="nav-item" nav-item="courses">
-                    COURSES
-                    <div class="drop-down">
-                        <a class="drop-down-item" href="Courses.html">GNM</a>
-                        <a class="drop-down-item" href="Courses.html">B.Sc.Nursing</a>
-                    </div>
-                </div>
-                <div class="nav-item no-sub-menu" nav-item="discipline">
-                    DISCIPLINE
-                </div>
-                <div class="nav-item">
-                    DEPARTMENTS
-                    <div class="drop-down">
-                        <a class="drop-down-item" href="Departments.html">Child Health</a>
-                        <a class="drop-down-item" href="Departments.html">Community Health</a>
-                        <a class="drop-down-item" href="Departments.html">MSN</a>
-                        <a class="drop-down-item" href="Departments.html">Mental Health</a>
-                        <a class="drop-down-item" href="Departments.html">Obstetrics & Gynaecology</a>
-                    </div>
-                </div>
-                <div class="nav-item no-sub-menu" nav-item="placements">
-                    PLACEMENTS
-                </div>
-                <div class="nav-item no-sub-menu" nav-item="contact-us">
-                    CONTACT US
-                </div>
-                <div id="menu-icon">
-                    <img src="Assets/Icons/menu-icon.svg" alt="menu-icon" />
-                </div>
+
+    <div id="header">
+        <div id="navbar-brand">
+            <img src="Assets/Icons/logo.svg" alt="logo" width="50" height="50" />
+            <div style="display: flex; margin-left: 10px;">
+                Amrutha&nbsp;
+                <span id="tag-name">Educational Soceity</span>
             </div>
         </div>
-        <div id="facilities">
+        <div id="navbar-items" >
+            <div class="nav-item no-sub-menu" nav-item="home">
+                HOME
+            </div>
+            <div class="nav-item" nav-item="facilities">
+                FACILITIES
+                <div class="drop-down">
+                    <a class="drop-down-item">Hostel</a>
+                    <a class="drop-down-item">Cafeteria</a>
+                    <a class="drop-down-item">Transportation</a>
+                    <a class="drop-down-item">Labs</a>
+                    <a class="drop-down-item">Library</a>
+                    <a class="drop-down-item">Multipurpose Hall</a>
+                </div>
+            </div>
+            <div class="nav-item" nav-item="courses">
+                COURSES
+                <div class="drop-down">
+                    <a class="drop-down-item" id="courseName">B.Sc[N] 4YDC</a>
+                </div>
+            </div>
+            <div class="nav-item" nav-item="discipline">
+                ADMISSIONS
+                <div class="drop-down">
+                    <a class="drop-down-item" >Rules & Regulations</a>
+                    <a class="drop-down-item" >Scholarship</a>
+                    <a class="drop-down-item" >Online Application</a>
+                    <a class="drop-down-item" >Download Application</a>
+                </div>
+            </div>
+            <div class="nav-item nav-active" nav-item="department">
+                ACADEMICS
+                <div class="drop-down">
+                    <a class="drop-down-item" >DEPARTMENTS</a>
+                    <a class="drop-down-item" >CALENDER</a>
+                    <a class="drop-down-item" >CO-CURRICULAR ACTIVITIES</a>
+                </div>
+            </div>
+            <div class="nav-item no-sub-menu" nav-item="placements">
+                PLACEMENTS
+            </div>
+            <div id="menu-icon">
+                <img src="Assets/Icons/menu-icon.svg" alt="menu-icon" />
+            </div>
+        </div>
+    </div>
+
+    <div id="facilities">
             <h3>DEPARTMENTS</h3>
             <p style="text-align: center; color: black; margin-top: 20px; font-size: 15px;">The college of nursing is structured into 5 major
                 academic departments such as Child Health Nursing, Mental Health Nursing & Obstetrics & Gynecology & Community
@@ -81,7 +87,7 @@
                         Nursing curriculum / second year in the  GNM curriculum.</p>
                 </div>
                 <div class="fac-img">
-                    <img src="Assets/Images/hostel-img.jpg" alt="hostel_img" />
+                    <img src="Assets/Images/dep_chn.jpg" alt="hostel_img" />
                 </div>
             </div>
             <div class="facility-item">
@@ -105,7 +111,7 @@
                     </p>
                 </div>
                 <div class="fac-img">
-                    <img src="Assets/Images/hostel-img.jpg" alt="hostel_img" />
+                    <img src="Assets/Images/dep_cmhn.jpg" alt="hostel_img" />
                 </div>
             </div>
             <div class="facility-item">
@@ -130,7 +136,7 @@
                     </p>
                 </div>
                 <div class="fac-img">
-                    <img src="Assets/Images/hostel-img.jpg" alt="hostel_img" />
+                    <img src="Assets/Images/dep_msn.jpg" alt="hostel_img" />
                 </div>
             </div>
             <div class="facility-item">
@@ -150,7 +156,7 @@
                     </p>
                 </div>
                 <div class="fac-img">
-                    <img src="Assets/Images/hostel-img.jpg" alt="hostel_img" />
+                    <img src="Assets/Images/dep+mh.jpg" alt="hostel_img" />
                 </div>
             </div>
             <div class="facility-item">
@@ -170,28 +176,62 @@
                     </p>
                 </div>
                 <div class="fac-img">
-                    <img src="Assets/Images/hostel-img.jpg" alt="hostel_img" />
+                    <img src="Assets/Images/dep_gyn.jpg" alt="hostel_img" />
                 </div>
             </div>
+
+        <h3 style="margin-top:50px;" id="calender-header">CALENDER</h3>
+
+        <p style="text-align: center; font-size: 16px; margin-top: 20px;" id="calender-data"><a href="http://ntruhs.ap.nic.in/Academics/index.html" target="_blank">Click here </a> to open the academic calender</p>
+
+
+        <h3 style="margin-top:50px;">CO CURRICULAR ACTIVITIES</h3>
+
+        <div class="course-item">
+            <div class="crse-data">
+                <p class="course-data">
+                    We are Conducting Smart board classes Seminar, Continuing, Nursing education practice research & administration for UG students. All National & WHO health related programme are conducted through public education, Pulse Polio Programme, world AIDS day, Teacher’s day etc;. Through this students are helped to learn current trends in nursing field & to implement into practical. Observational visit area made as a part of Curriculum requirement like visit to water purification Centre, Sewage disposal, & visit to Heritage dairy & other classes are conducted to have self discipline life.
+                <ul>
+                    <li>YOGA</li>
+                    <li>MEDITATION</li>
+                    <li>TEMPLE & CHURCH VISIT</li>
+                    <li>MORAL CLASSES</li>
+                    <li>SPOKEN ENGLISH</li>
+                    <li>NCC</li>
+                    <li>NSS</li>
+                    <li>SNA</li>
+                    <li>SPORTS</li>
+                    <li>CELEBRATION OF BIRTHDAYS</li>
+                    <li>CELEBRATION OF FESTIVALS</li>
+                </ul>
+                </p>
+            </div>
         </div>
-        <div id="footer">
-            <div class="footer-container">
-                <p class="footer-head">
-                    LOCATE US
-                    <img src="Assets/Icons/loc-pin.svg" alt="loc-pin-logo" style="width: 20px; margin-left: 10px" /> </p>
-                <p>Door-no: 22-1045, SBI Colony Lane-1</p>
-                <p>Muruganipalli, Chittoor, Andhra Pradesh-517001</p>
-            </div>
-            <div class="footer-container">
-                <p>Copyright © 2020 - All Right Reserved - Amrutha</p>
-            </div>
-            <div class="footer-container">
-                <p class="footer-head">FOLLOW US</p>
-                <img src="Assets/Icons/facebook.svg" alt="fb_logo"/>
-                <img src="Assets/Icons/twitter.svg" alt="tw_logo"/>
-                <img src="Assets/Icons/instagram.svg" alt="insta_logo"/>
-                <img src="Assets/Icons/linkedin.svg" alt="lIn_logo"/>
-            </div>
+
+
         </div>
+    <div id="footer">
+        <div class="footer-container">
+            <p class="footer-head">
+                LOCATE US
+                <img src="Assets/Icons/loc-pin.svg" id="map-pin" alt="loc-pin-logo" style="width: 20px; margin-left: 10px" /> </p>
+            <p>AMRUTHA Educational Soceity,</p>
+            <p>Besides Yaduvamsi Ayatanam,</p>
+            <p>Pendurthi,</p>
+            <p>Visakhapatnam district-531173,</p>
+            <p>Andhra Pradesh,</p>
+            <p>Ph.no : 8106944798</p>
+        </div>
+        <div class="footer-container">
+            <p>Copyright © 2020 - All Right Reserved - Amrutha</p>
+        </div>
+        <div class="footer-container">
+            <p class="footer-head">FOLLOW US</p>
+            <img src="Assets/Icons/facebook.svg" class="soc-med" soc-med="facebook" alt="fb_logo"/>
+            <img src="Assets/Icons/twitter.svg" class="soc-med" soc-med="twitter" alt="tw_logo"/>
+            <img src="Assets/Icons/instagram.svg" class="soc-med" soc-med="insta" alt="insta_logo"/>
+            <img src="Assets/Icons/linkedin.svg" class="soc-med" soc-med="linkedin" alt="lIn_logo"/>
+        </div>
+    </div>
     </body>
 </html>
