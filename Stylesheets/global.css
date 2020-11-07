@@ -577,3 +577,19 @@ html, body {
     min-height: 100%;
     border-left: 1px solid var(--secondary-color);
 }
+
+#openGallery{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(51, 122, 183, 0.75);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+#glry_thumbnail:hover #openGallery{
+    display: flex;
+}

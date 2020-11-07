@@ -13,6 +13,19 @@ $(document).ready(function () {
             window.open(url, '_blank');
         });
     }
+    try{
+        var glry = document.getElementById("glry_thumbnail");
+        glry.addEventListener("mouseover", function () {
+            document.getElementById("openGallery").style.display = "flex";
+            console.log("hover");
+        });
+        glry.addEventListener("mouseout", function () {
+            document.getElementById("openGallery").style.display = "none";
+            console.log("hover");
+        });
+    }catch (e) {
+
+    }
     var specificInstitute = getInstitute();
     var navToPage = function() {
         var selectdItem = this.getAttribute("nav-item");
@@ -160,6 +173,10 @@ function getInstitute(){
         return res;
     }
     return '';
+}
+
+function navToGallery(){
+    window.open('/AmruthaWeb/gallery.html', "_blank");
 }
 
 function sendMail(){
