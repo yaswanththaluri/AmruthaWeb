@@ -152,6 +152,20 @@ $(document).ready(function () {
             window.location.href='home_clgOfNursing.html?ins=con';
         }
     });
+    
+    try{
+        var fName = document.getElementById("footer_name");
+        var name = "Amrutha Educational Soceity";
+        if(specificInstitute === "son"){
+            name = "Amrutha School of Nursing";
+        }
+        else if(specificInstitute === "con"){
+            name = "Amrutha College of Nursing";
+        }
+        fName.innerText = name;
+    }catch (e) {
+        
+    }
 
     try{
         if(specificInstitute === "son"){

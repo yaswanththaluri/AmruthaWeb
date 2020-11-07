@@ -128,7 +128,7 @@
         <div id="updates">
             <div class="update-container">
                 <h3>RECENT UPDATES</h3>
-                <div id="update-container-recent-updates">
+                <div class="update-container-recent-updates">
                     <div class="recent-update-item">
                         <div class="new-announcement-tag">
                             NEW
@@ -137,7 +137,14 @@
                     </div>
                 </div>
             </div>
-            <div class="update-container" style="width: 50%;">
+            <div class="update-container">
+                <h3>GALLERY</h3>
+                <div class="update-container-recent-updates">
+                    <img id="glry_thumbnail" src="Assets/Images/gallery_thumbnail.PNG" style="width: 300px;" onclick="navToGallery()"/>
+                    <div id="openGallery" onclick="navToGallery()">Open in gallery</div>
+                </div>
+            </div>
+            <div class="update-container">
                 <h3>PRINCIPLE'S MESSAGE</h3>
                 <p style="font-size: 15px; color: #000000; font-style: italic; margin-top: 40px;">Nursing is the Noblest profession of all the professions. It is not only in immense demand globally, it also offers a colourful rewarding career. The opportunities for a nurse are varied & limitless. A new professional nurse may choose between clinical practice, education, research management, administration, occupational & industrial nursing.
                     The horizon has expanded widely abroad with never ending staff shortage in western countries, European & Middle East countries not ignoring the demands “at home”.</p>
@@ -182,7 +189,7 @@
             <p class="footer-head">
                 LOCATE US
                 <img src="Assets/Icons/loc-pin.svg" id="map-pin" alt="loc-pin-logo" style="width: 20px; margin-left: 10px" /> </p>
-            <p>AMRUTHA Educational Soceity,</p>
+            <p id="footer_name">AMRUTHA Educational Soceity,</p>
             <p>Besides Yaduvamsi Ayatanam,</p>
             <p>Pendurthi,</p>
             <p>Visakhapatnam district-531173,</p>
