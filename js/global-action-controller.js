@@ -15,9 +15,20 @@ $(document).ready(function () {
     }
     try{
         var glry = document.getElementById("glry_thumbnail");
+        glry.addEventListener("click", function () {
+            window.open('/AmruthaWeb/gallery.html', "_blank");
+        });
+
+        var glry2 = document.getElementById("openGallery");
+        glry2.addEventListener("click", function () {
+            window.open('/AmruthaWeb/gallery.html', "_blank");
+        });
+
         glry.addEventListener("mouseover", function () {
             document.getElementById("openGallery").style.display = "flex";
-            console.log("hover");
+            if(window.screen.width<600){
+                window.open('/AmruthaWeb/gallery.html', "_blank");
+            }
         });
         glry.addEventListener("mouseout", function () {
             document.getElementById("openGallery").style.display = "none";
@@ -163,16 +174,6 @@ $(document).ready(function () {
             name = "Amrutha College of Nursing";
         }
         fName.innerText = name;
-    }catch (e) {
-        
-    }
-
-    try{
-        var glry = document.getElementById("glry_thumbnail");
-        glry.addEventListener("click", navToGallery);
-        
-        var glry2 = document.getElementById("openGallery");
-        glry2.addEventListener("click", navToGallery);
     }catch (e) {
         
     }
