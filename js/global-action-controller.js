@@ -168,6 +168,16 @@ $(document).ready(function () {
     }
 
     try{
+        var glry = document.getElementById("glry_thumbnail");
+        glry.addEventListener("click", navToGallery);
+        
+        var glry2 = document.getElementById("openGallery");
+        glry2.addEventListener("click", navToGallery);
+    }catch (e) {
+        
+    }
+
+    try{
         if(specificInstitute === "son"){
             var calHead = document.getElementById("calender-header");
             var calData = document.getElementById("calender-data");
